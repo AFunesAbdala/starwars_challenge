@@ -16,7 +16,7 @@ export default async function MovieDetailPage({ params }) {
     const data = await getMoviesDetailsData(idMovie)
 
     return (
-        <div className="flex flex-col items-center h-screen w-full text-white">
+        <div className="flex flex-col items-center h-screen w-full text-white animate-fadeIn">
             <Image src={Background} alt={`Movie ${idMovie} Background`} className="absolute -z-10 h-screen w-auto object-cover opacity-30"></Image>
             <h3 className="font-light mt-8">Episode {idMovie}</h3>
             <div className="w-2/6 h-[1px] bg-white my-4"></div>

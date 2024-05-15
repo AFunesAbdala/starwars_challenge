@@ -12,9 +12,7 @@ export default function CharactersPagination(props) {
     const currentPage = parseInt(page)
     const totalPages = Math.ceil(countCharacters / pageSize)
     const pagesArray = Array.from({ length: totalPages }, (_, index) => index + 1)
-
-    console.log(currentPage)
-    console.log(page)
+    
     return (
         <div className="flex flex-row gap-4">
             <Link href={`/select/characters?page=${currentPage - 1}`} className={currentPage===1 ? "hidden" : "italic text-white/80 text-sm"}>Previous</Link>

@@ -15,7 +15,7 @@ export default async function MoviesPage() {
         <div className="absolute top-0 -z-10 flex items-end justify-center h-screen overflow-hidden">
             <VideoComponent className={"absolute top-0 z-10 w-auto min-w-full min-h-4/5 max-w-none"} src={'../video/movies.mp4'}/>
             <div className="relative z-20 inset-x-0 bottom-0 h-2/6 bg-gradient-to-t from-red-900 from-55% pt-5 w-screen flex item-center justify-center">
-                <div className="w-5/6 overflow-x-auto flex flex-row items-center gap-12 h-4/5 shadow-xl p-5">
+                <div className="absolute bottom-16 w-5/6 overflow-x-auto flex flex-row items-center gap-12 h-fit shadow-xl p-5">
                     {
                         data.results.map(e => {
                             const id = e.url.split("/")

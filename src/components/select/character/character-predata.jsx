@@ -33,11 +33,11 @@ export default function CharacterPreDataComponent(props) {
                     <div className="flex gap-6 border-y-2 border-white p-4">
                         <div className="w-3/6 flex items-center gap-4">
                             <Image src={charactersPreData.eyeColor === "unknown" ? NullIcon : EyeIcon} alt="Eye Icon" className="w-20"></Image>
-                            <h1>EyeColor: {charactersPreData.eyeColor != "n/a" && charactersPreData.eyeColor != "unknown" && charactersPreData.eyeColor}</h1>
+                            <h1 className="font-light text-sm">EyeColor: {charactersPreData.eyeColor != "n/a" && charactersPreData.eyeColor != "unknown" && charactersPreData.eyeColor}</h1>
                         </div>
                         <div className="w-3/6 flex items-center gap-4">
                             <Image src={charactersPreData.gender === "male" ? MaleIcon : charactersPreData.gender === "female" ? FemaleIcon  : charactersPreData.gender === "hermaphrodite" ? AgenderIcon : NullIcon} alt="Female Icon" className="w-20"></Image>
-                            <h2>Gender: {charactersPreData.gender != "n/a" && charactersPreData.gender != "none" && charactersPreData.gender}</h2>
+                            <h2 className="font-light text-sm">Gender: {charactersPreData.gender != "n/a" && charactersPreData.gender != "none" && charactersPreData.gender}</h2>
                         </div>
                     </div>
                 </div>
