@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MoviePortrait from "../../../../public/image/movie-portrait.jpg"
+import MoviePortrait from "../../../../public/image/movie/movie-portrait.jpg"
 import { useState } from "react";
 
 function MovieComponent(props) {

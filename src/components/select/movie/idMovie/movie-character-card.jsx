@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Character from "../../../../../public/image/character-portrait.jpg"
+import Character from "../../../../../public/image/movie/character-portrait.jpg"
 import { useState } from "react";
 
 export default function CharacterCard(props) {

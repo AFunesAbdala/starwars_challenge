@@ -1,7 +1,7 @@
 import Image from "next/image"
-import Background from "../../../../../public/image/movie-id-background.jpg"
+import Background from "../../../../../public/image/movie/movie-id-background.jpg"
 import { Suspense } from "react"
-import MovieCharacters from "@/components/select/movie/idMovie/characterPromises"
+import MovieCharacters from "@/components/select/movie/idMovie/movie-character-promises"
 
 async function getMoviesDetailsData(id) {
     const res = await fetch(`https://swapi.dev/api/films/${id}`)
@@ -29,7 +29,7 @@ export default async function MovieDetailPage({ params }) {
                 <h2>{data.producer}</h2>
                 <h2 className="italic text-sm">(Producers)</h2>
             </div>
-            <div className="absolute w-full bottom-32">
+            <div className="absolute w-full bottom-16">
                 <h2 className="font-bold mb-4 text-center">CHARACTERS</h2>
                 <div className="h-60 w-full bg-gradient-to-r from-transparent via-red-900 flex items-center justify-center">
                     <Suspense fallback={

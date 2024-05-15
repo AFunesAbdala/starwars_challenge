@@ -1,5 +1,4 @@
-import Link from "next/link";
-import CharacterCard from "./characterCard";
+import CharacterCard from "./movie-character-card";
 
 async function getDataForEachCharacters(array) {
     const characters = await Promise.all(array.map(async element => {

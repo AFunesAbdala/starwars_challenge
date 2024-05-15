@@ -19,7 +19,8 @@ module.exports = {
       'sky': {
         '300': '#8BE3FF',
         '500': '#00C2FF',
-        '600': '#0085FF'
+        '600': '#0085FF',
+        '900': '#002F5A'
       }
     },
     extend: {
@@ -40,6 +41,8 @@ module.exports = {
       boxShadow: {
         redOne: '0 0 5px #8A0000',
         redTwo: '0 0 20px #8A0000',
+        skyOne: '0 0 5px #8BE3FF',
+        skyTwo: '0 0 20px #0085FF'
       }
     },
   },
